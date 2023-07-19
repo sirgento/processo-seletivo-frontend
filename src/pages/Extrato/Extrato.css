@@ -1,0 +1,56 @@
+#tabela-extrato,
+#tabela-saldos,
+#div-busca {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#tabela-extrato {
+    display: inline-table;
+    border-top: none;
+}
+
+#tabela-saldos {
+    padding: 1em;
+}
+
+#tabela-saldos span {
+    margin-right: 2em;
+}
+
+#div-busca {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding: 0.5em;
+}
+
+#div-busca * button {
+    margin-top: 0.5em;
+    width: 50%;
+
+}
+
+@media screen and (max-width: 800px) {
+
+    #tabela-extrato,
+    #tabela-saldos,
+    #div-busca {
+        width: calc(100% - 2em);
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    #div-busca * button {
+        width: 90%;
+    }
+
+    .span-saldo {
+        width: 100%;
+        display: block;
+    }
+
+    #tabela-extrato {
+        display: block;
+    }
+}
